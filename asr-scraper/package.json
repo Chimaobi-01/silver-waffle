@@ -1,0 +1,26 @@
+{
+  "name": "asr-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scrape":"node src/index.js",
+    "scrape:fixtures":"node src/index.js --auto-fixtures",
+    "scrape:headed":"node src/index.js --headed",
+    "scrape:debug":"node src/index.js --headed --slow-mo 500"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.4.0"
+  },
+  "dependencies": {
+    "csv-stringify": "^6.8.3",
+    "fs-extra": "^11.4.0",
+    "p-limit": "^7.3.2"
+  }
+}
